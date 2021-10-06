@@ -9,17 +9,18 @@ from time import time, sleep
 from datetime import datetime
 from termcolor import colored
 
+# Add your datasets here
 DATASETS = [
     'frigate',
-    'pmag',
-    'empirix',
     'lxd',
     'private',
     'libvirt',
     ]
 
+# Customize for your source and target dataset
 SRC_DS='lxdzfs'
 DST_DS='backup/lxdzfs_backup'
+# Optionally customize snapshot names
 ORIGIN_SNAP='current'
 HEAD_SNAP='backup'
 
